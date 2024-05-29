@@ -1,0 +1,76 @@
+* các biến siêu toàn cục: 
+$_GLOBALS
+$_SERVER
+$_REQUEST
+$_POST
+$_GET
+$_FILES
+$_ENV
+$_COOKIE
+$_SESSION
+
+// LẤY DỮ LIỆU TỪ TỪ $_GET, $_POST, $COOKIE ĐỂ ĐẤY LÊN NHỮNG TRANG KHÁC
+    // $_REQUEST['<Field Name>']
+
+    //Biểu thức chính quay 
+    /*
+    thường được sử dụng để kiểm tra dữ liệu:
+    $exp = "/<pattern>/i";
+
+    các hàm: 
+    preg_match() trả về 1 nếu hàm nằm trong xâu
+    preg_match_all(): trả về số lượng các pattern xuất hiện trong xâu
+    preg_replace(): thay thế pattern bằng một xâu
+
+
+4> PHP from Validation
+
+$_SERVER["PHP_SELF"] được dùng để submit dữ liệu từ form lên chính trang chứa dữ LIỆU
+để kiểm tra có 3 hàn quan trọng:
++ trim(): xóa đi khoảng trắng thừa trong xâu
++ stripslashes(): bỏ đi dấu gạch sọc, làm thay đổi dịnh dạng đường link của website
++ htmlspecialchars(): chuyển đổi một số ký hiệu đặc biệt trong html 
+
+5> 
+
+6> Lập trình hướng đối tượng 
+bên trong class: từ khóa $this tham chiếu đến đối tượng hiện tại có ý nghĩa đối với các hàm bên tromng một lớp
+bên ngoài class: được tham chiếu trực tiếp thông qua thuộc tính của đối tượng
+
+từ khóa: instanceof dùng để kiểm tra xem một từ khóa có thuộc vào một lớp hay không
+
+* hàm khởi tạo: constructor and Destructor
+hàm khởi tạo "__contruct()" để tạo ra một đối tượng note: có hai dấu gách dưới
+
+* các phạm vi truy câp:
+- public: trước thuộc tính và phương thức không khai báo phạm vi thì coi như là public có thể truy cập bất kỳ ở đâu đó
+- protected: thuộc tính và phương thức sẽ được truy cập bên trong lớp và lớp được kế thừa
+- private: thuộc tính và phương thức chỉ có thể được truy cập bên trong lớp 
+
+* kế thừa
+sử dụng từ khóa extend để tạo kế thừa
+
+* lớp ảo:
+- lớp ảo sẽ dùng từ khóa abstract trước class
+- lớp ảo cha phải có ít nhất một phương thức ảo
+- phương thức ảo là phương thức chỉ khia báo mà không định nghĩa tức không có thân hàm
+- một lớp con kế thừa thừ một lớp ảo thì phải định nghĩa lại các phương thức ảo ở lớp cha tức có thân hàm
+
+
+* MySql Introduction:
+sử dụng mySQLi để làm việc với csdl
+
+
+** note: mvc :
+3 file trong processing này sẽ chứa 3 lớp trùng với tên file:
+  protected $params = [] => dùng khi với phương thức get
+
+* tìm kiếm: tìm kiếm 1 điều kiện
+
+
+Tuần mới : laravel
+
+1 install composer
+
+câu lệnh tạo dự án:
+composer create-project laravel/laravel example-app

@@ -1,0 +1,25 @@
+blade:
+muốn sử dụng được blade
+cú pháp: name.blade.php 
+
+
+** router: để điều khiển các router của view
+
+Route::method('url', function () {
+    return view('welcome');
+});
+
+** view:
+thực hành:
+trong thư mục view tạo thư mục layout
+tạo 
+
+** contronller:
+lệnh tạo: php artisan make:controller tenController
+
+** model:
+
+php artisan make:model tenModel
+
+
+
